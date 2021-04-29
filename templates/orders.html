@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Orders</h1>
+
+<table class="ui striped table">
+    <thead>
+    <tr>
+        <th>Created</th>
+        <th>Side</th>
+        <th>Quantity</th>
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+{% for order in orders %}
+    <tr>
+        <td>
+            {{ order.created_at }}
+        </td>
+        <td>
+            {{ order.side }}
+        </td>
+        <td>
+            {{ order.filled_qty }}
+        </td>
+        <td>
+            {{ order.symbol }}
+        </td>
+        <td>
+            {{ order.filled_avg_price }}
+        </td>
+        <td>
+            {{ order.status }}
+        </td>
+
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}
