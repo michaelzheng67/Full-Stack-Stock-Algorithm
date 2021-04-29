@@ -5,3 +5,7 @@ Full stack trading app that mainly uses Python to co-ordinate stock trading deci
 Connects to Alpaca API to extract equity prices and execute trades to paper account. Algorithm utilizes database (Sqlite) which is continuously updated using cronjobs from terminal. 
 
 Comes with UX/UI component where user is able to display localhost site by entering: uvicorn main app: --reload into terminal.
+
+Notes:
+
+- When code is referring to the config file, that is simply a file of variables given to hide sensitive information (e.g alpaca api key password)
