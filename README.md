@@ -9,3 +9,5 @@ Comes with UX/UI component where user is able to display localhost site by enter
 Notes:
 
 - When code is referring to the config file, that is simply a file of variables given to hide sensitive information (e.g alpaca api key password)
+- The template and database within the app is reusable, thus, you can take out the opening_range_breakout.py file and replace it with whatever trade algorithm you need
+- Make sure that you have some sort of way to continuously update the stocks table and stock prices. Personally, I used cronjobs within my computer's terminal in order to set whenever the stocks and stock prices .py files should run in order to update the data
