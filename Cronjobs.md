@@ -1,5 +1,4 @@
-# Keep databases updated with new information during the trading days and times by initiating cronjobs within terminal to keep the corresponding scripts running
-# and log activity to log file 
+# Keep databases updated with new information during the trading days and times by initiating cronjobs within terminal to keep the corresponding scripts running and log activity to log file 
 
 0 22 * * * <Location path within computer for python environment> /Users/michaelzheng/Projects/algo-trading/populate_db.py >> populate.log 2>&1
 
