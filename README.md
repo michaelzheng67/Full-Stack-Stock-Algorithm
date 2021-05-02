@@ -13,3 +13,4 @@ Notes:
 - Make sure that you have some sort of way to continuously update the stocks table and stock prices. Personally, I used cronjobs within my computer's terminal in order to set whenever the stocks and stock prices .py files should run in order to update the data
 - I don't have a list of what imports you need to make, but that can mostly be figured out from the very beginning of every file where I list all the imports
 - You may have noticed that there is a table dedicated to strategies within the database schema. This was how the original tutorial designed the applcation. However, I'm only using one strategy to trade, so this table is obsolete for my specific use. However, the good thing is that it makes the schema reusable and scalable, so in case you wanted to design a multi-strategy application, it will be much easier to implement with a strategies table 
+- This app is meant to connect to an Alpaca Trading Account 
