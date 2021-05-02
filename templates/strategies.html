@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Strategies</h1>
+<table class="ui striped table">
+    {% for strategy in strategies %}
+    <tr>
+        <td><a href="/strategy/{{ strategy.id }}">
+            {{ strategy.name }}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
