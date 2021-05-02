@@ -47,9 +47,9 @@ for stock in stocks:
         stock_id = stock_dict[symbol]
 
         cursor.execute("""
-            insert into stock_strategy (stock_id, strategy_id)
+            insert into stock_strategy (stock_id, strategy_id, gap)
             values (?, ?)
-        """, (stock_id, 1))
+        """, (stock_id, 1, gap))
         # hard coded breakout strategy id for insert statement but it can also be edited to be dynamic
 
 
