@@ -6,6 +6,8 @@ Connects to Alpaca API to extract equity prices and execute trades to paper acco
 
 Comes with UX/UI component where user is able to display localhost site by entering: uvicorn main app: --reload into terminal.
 
+Example of this app working: Amazon stock has gapped up 5% in premarket trading and has opened 5% higher compared to the last trading day's close price. The stock algorithm will detect this and add Amazon stock to the table of equities that will be traded today. We will wait to see the price movement of the stock in the first couple minutes of open to establish a price range. Then, we will send an order for when the stock is looking to breakout and sell at predetermined price. 
+
 Notes:
 
 - When code is referring to the config file, that is simply a file of variables given to hide sensitive information (e.g alpaca api key password)
